@@ -44,8 +44,7 @@ public class BuildParameters
             Target = target,
             Configuration = context.Argument("configuration", "Release"),
             IsLocalBuild = buildSystem.IsLocalBuild,
-            GitUser = context.EnvironmentVariable("GITHUB_USERNAME"),
-            GitPassword = context.EnvironmentVariable("GITHUB_PASSWORD")
+            GitUser = context.EnvironmentVariable("GITHUB_USERNAME")
 		};
 	}
 }

@@ -140,7 +140,7 @@ Task("__Tag")
     .Does(() =>
     {
         GitTag(".", parameters.Version.Milestone);
-        GitPushRef(".", parameters.GitUser, parameters.GitPassword, "origin", 
+        GitPushRef(".", parameters.GitUser, "", "origin", 
 			parameters.Version.Milestone); 
     })
 	.OnError(exception =>
