@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <VersionPrefix>$(SemVer)</VersionPrefix>
     <AssemblyName>NetSmith.Enumeration</AssemblyName>
-    <PackageId>Enumeration</PackageId>
+    <PackageId>NetSmith.Enumeration</PackageId>
     <PackageTags></PackageTags>
   </PropertyGroup>
 
