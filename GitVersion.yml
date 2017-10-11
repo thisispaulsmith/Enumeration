@@ -1,0 +1,6 @@
+mode: ContinuousDeployment
+branches: 
+    develop:
+        tag: dev
+    master:
+        mode: ContinuousDelivery
