@@ -6,6 +6,8 @@
     <AssemblyName>NetSmith.Enumeration</AssemblyName>
     <PackageId>NetSmith.Enumeration</PackageId>
     <PackageTags></PackageTags>
+    <PackageProjectUrl>https://github.com/thisispaulsmith/Enumeration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thisispaulsmith/Enumeration</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

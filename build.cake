@@ -19,7 +19,7 @@ BuildParameters parameters = BuildParameters.GetParameters(Context);
 
 var outputDirectory = "./output/";
 var solutionPath = "./NetSmith.Enumeration.sln";
-var testFolder = "./test";
+var testFolder = "./tests";
 
 ///////////////////////////////////////////////////////////////////////////////
 // SETUP / TEARDOWN
@@ -140,7 +140,7 @@ Task("__Tag")
     .Does(() =>
     {
         GitTag(".", parameters.Version.Milestone);
-        GitPushRef(".", parameters.GitUser, parameters.GitPassword, "origin", 
+        GitPushRef(".", parameters.GitUser, "", "origin", 
 			parameters.Version.Milestone); 
     })
 	.OnError(exception =>
