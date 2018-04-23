@@ -79,6 +79,20 @@ namespace NetSmith.Enumeration
             return matchingItem;
         }
 
+        /// <summary>
+        /// Converts the byte representation of an enumeration type to it's underlying value. A return value indicates 
+        /// if the conversion succeeded.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="value">A byte containing the number to convert.</param>
+        /// <param name="result">True if the conversion was successful false otherwise.</param>
+        /// <returns></returns>
+        public static bool TryParse<T>(byte value, out T result) where T :Enumeration
+        {
+            result = GetAll<T>().FirstOrDefault(_ => _.Value == value);
+            return result != null;
+        }
+
         private static T Parse<T, K>(K value, string description, Func<T, bool> predicate) where T : Enumeration
         {
             var matchingItem = GetAll<T>().FirstOrDefault(predicate);

@@ -19,7 +19,7 @@ BuildParameters parameters = BuildParameters.GetParameters(Context);
 
 var outputDirectory = "./output/";
 var solutionPath = "./NetSmith.Enumeration.sln";
-var testFolder = "./test";
+var testFolder = "./tests";
 
 ///////////////////////////////////////////////////////////////////////////////
 // SETUP / TEARDOWN
